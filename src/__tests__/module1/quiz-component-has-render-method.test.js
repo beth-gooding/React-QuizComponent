@@ -7,7 +7,7 @@ import { assert } from 'chai';
 let quizComponentExists = false;
 let Quiz;
 try {
-  Quiz = require('../../Quiz.js').default;
+  Quiz = require('../../Quiz.jsx').default;
   quizComponentExists = true;
 } catch (e) {
   quizComponentExists = false;
@@ -16,7 +16,7 @@ try {
 let quizQuestionComponentExists = false;
 let QuizQuestion;
 try {
-  QuizQuestion = require('../../QuizQuestion.js').default;
+  QuizQuestion = require('../../QuizQuestion.jsx').default;
   quizQuestionComponentExists = true;
 } catch (e) {
   quizQuestionComponentExists = false;

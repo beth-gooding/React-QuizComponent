@@ -11,7 +11,7 @@ describe('Quiz Component', () => {
   it('has a constructor function that accepts `props` as a parameter  @quiz-component-has-constructor-function', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../Quiz.js').toString();
+      file = fs.readFileSync(__dirname + '/../../Quiz.jsx').toString();
     } catch (e) {
       assert(false, "The Quiz.js file hasn't been created yet.")
     }
@@ -44,7 +44,7 @@ describe('Quiz Component', () => {
   it('has a constructor function that calls `super(props)` @quiz-component-has-constructor-function', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../Quiz.js').toString();
+      file = fs.readFileSync(__dirname + '/../../Quiz.jsx').toString();
     } catch (e) {
       assert(false, "The Quiz.js file hasn't been created yet.")
     }

@@ -11,7 +11,7 @@ describe('QuizQuestion Component', () => {
   it('imports the React and Component classes @quiz-question-component-imports-react', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../QuizQuestion.js').toString();
+      file = fs.readFileSync(__dirname + '/../../QuizQuestion.jsx').toString();
     } catch (e) {
       assert(false, "The QuizQuestion.js file hasn't been created yet.")
     }

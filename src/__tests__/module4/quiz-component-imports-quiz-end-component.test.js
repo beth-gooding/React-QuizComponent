@@ -12,14 +12,14 @@ describe('Quiz Component', () => {
 
     let quizFile;
     try {
-      quizFile = fs.readFileSync(__dirname + '/../../Quiz.js').toString();
+      quizFile = fs.readFileSync(__dirname + '/../../Quiz.jsx').toString();
     } catch (e) {
       assert(false, "The Quiz.js file hasn't been created yet.")
     }
 
     let quizEndFile;
     try {
-      quizEndFile = fs.readFileSync(__dirname + '/../../QuizEnd.js').toString();
+      quizEndFile = fs.readFileSync(__dirname + '/../../QuizEnd.jsx').toString();
     } catch (e) {
       assert(false, "The QuizEnd.js file hasn't been created yet.")
     }

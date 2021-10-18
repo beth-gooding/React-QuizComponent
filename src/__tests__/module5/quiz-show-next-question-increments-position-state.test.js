@@ -8,7 +8,7 @@ import sinon from 'sinon';
 let quizComponentExists = false;
 let Quiz;
 try {
-  Quiz = require('../../Quiz.js').default;
+  Quiz = require('../../Quiz.jsx').default;
   quizComponentExists = true;
 } catch (e) {
   quizComponentExists = false;

@@ -11,7 +11,7 @@ describe('Quiz Component', () => {
   it('requires quiz_data.json @quiz-component-requires-quiz-json', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../Quiz.js').toString();
+      file = fs.readFileSync(__dirname + '/../../Quiz.jsx').toString();
     } catch (e) {
       assert(false, "The Quiz.js file hasn't been created yet.")
     }

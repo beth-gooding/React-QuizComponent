@@ -11,9 +11,9 @@ describe('QuizEnd Component', () => {
   it('imports the React and Component classes @quiz-end-component-imports-react', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../QuizEnd.js').toString();
+      file = fs.readFileSync(__dirname + '/../../QuizEnd.jsx').toString();
     } catch (e) {
-      assert(false, "The QuizEnd.js file hasn't been created yet.")
+      assert(false, "The QuizEnd.jsx file hasn't been created yet.")
     }
 
     let ast = babylon.parse(file, { sourceType: "module", plugins: ["jsx"] })

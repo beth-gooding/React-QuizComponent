@@ -7,7 +7,7 @@ import { assert } from 'chai';
 let quizQuestionComponentExists = false;
 let QuizQuestion;
 try {
-  QuizQuestion = require('../../QuizQuestion.js').default;
+  QuizQuestion = require('../../QuizQuestion.jsx').default;
   quizQuestionComponentExists = true;
 } catch (e) {
   quizQuestionComponentExists = false;
@@ -37,7 +37,7 @@ describe('QuizQuestion Component', () => {
 
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../QuizQuestion.js').toString();
+      file = fs.readFileSync(__dirname + '/../../QuizQuestion.jsx').toString();
     } catch (e) {
       assert(false, "The QuizQuestion.js file hasn't been created yet.")
     }

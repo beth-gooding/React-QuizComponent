@@ -11,7 +11,7 @@ describe('QuizQuestionButton Component', () => {
   it('has a QuizQuestionButton class that extends Component @quiz-question-button-component-has-quiz-question-button-class', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../QuizQuestionButton.js').toString();
+      file = fs.readFileSync(__dirname + '/../../QuizQuestionButton.jsx').toString();
     } catch (e) {
       assert(false, "The QuizQuestionButton.js file hasn't been created yet.")
     }
@@ -40,7 +40,7 @@ describe('QuizQuestionButton Component', () => {
   it('exports the QuizQuestionButton class as default @quiz-question-button-component-has-quiz-question-button-class', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../QuizQuestionButton.js').toString();
+      file = fs.readFileSync(__dirname + '/../../QuizQuestionButton.jsx').toString();
     } catch (e) {
       assert(false, "The QuizQuestionButton.js file hasn't been created yet.")
     }

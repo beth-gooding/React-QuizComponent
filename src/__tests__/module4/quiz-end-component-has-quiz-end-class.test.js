@@ -11,7 +11,7 @@ describe('QuizEnd Component', () => {
   it('has a QuizEnd class that extends Component @quiz-end-component-has-quiz-end-class', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../QuizEnd.js').toString();
+      file = fs.readFileSync(__dirname + '/../../QuizEnd.jsx').toString();
     } catch (e) {
       assert(false, "The QuizEnd.js file hasn't been created yet.")
     }
@@ -40,7 +40,7 @@ describe('QuizEnd Component', () => {
   it('exports the QuizEnd class as default @quiz-end-component-has-quiz-end-class', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../QuizEnd.js').toString();
+      file = fs.readFileSync(__dirname + '/../../QuizEnd.jsx').toString();
     } catch (e) {
       assert(false, "The QuizEnd.js file hasn't been created yet.")
     }

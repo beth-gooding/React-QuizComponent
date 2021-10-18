@@ -11,7 +11,7 @@ describe('Quiz Component', () => {
   it('has a const named isQuizEnd that uses state to determine value @quiz-component-has-is-quiz-end-const', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../Quiz.js').toString();
+      file = fs.readFileSync(__dirname + '/../../Quiz.jsx').toString();
     } catch (e) {
       assert(false, "The Quiz.js file hasn't been created yet.")
     }

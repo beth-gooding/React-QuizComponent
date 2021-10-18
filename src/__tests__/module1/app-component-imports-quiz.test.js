@@ -18,7 +18,7 @@ describe('App Component', () => {
 
     let quizFile;
     try {
-      quizFile = fs.readFileSync(__dirname + '/../../Quiz.js').toString();
+      quizFile = fs.readFileSync(__dirname + '/../../Quiz.jsx').toString();
     } catch (e) {
       assert(false, "The Quiz.js file hasn't been created yet.")
     }
@@ -29,7 +29,7 @@ describe('App Component', () => {
 
     ast['program']['body'].forEach(element => {
       if (element.type == 'ImportDeclaration') {
-        if (element.source.value == './Quiz.js' || element.source.value == './Quiz' || element.source.value == 'Quiz') {
+        if (element.source.value == './Quiz.jsx' || element.source.value == './Quiz' || element.source.value == 'Quiz') {
           assert(element.specifiers[0].local.name == 'Quiz', "You're not importing the Quiz class from the Quiz.js file.")
           quiz_import_found = true
         }

@@ -11,7 +11,7 @@ describe('QuizQuestionButton Component', () => {
   it('imports the React and Component classes @quiz-question-button-component-imports-react', () => {
     let file;
     try {
-      file = fs.readFileSync(__dirname + '/../../QuizQuestionButton.js').toString();
+      file = fs.readFileSync(__dirname + '/../../QuizQuestionButton.jsx').toString();
     } catch (e) {
       assert(false, "The QuizQuestionButton.js file hasn't been created yet.")
     }
